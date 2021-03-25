@@ -1,44 +1,114 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>EDWORD WEBSITE</title>
-<style>
+<title>DRAGONS WORD WEBSITE</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="mystyle.css">
+<style type="text/css">
 body {
-  background-color: #f5f5f5;
+  background-color: #9addcd;
   text-align: center;
-  color: #525252;
-  font-family:  "Lucida Console", "Courier New", monospace;
+  color: #490000;
+  font-family:  "Verdana", "Tahoma", monospace;
 }
+.flex {
+ display: flex;
+ align-items: center;
+ justify-content: center;
+}
+
+.app {
+ &-btn {
+  width: 45%;
+  max-width: 160px;
+  color: #fff;
+  margin: 20px 10px;
+  text-align: left;
+  border-radius: 5px;
+  text-decoration: none;
+  font-family: "Lucida Grande", sans-serif;
+  font-size: 10px;
+  text-transform: uppercase;
+  &.blu {
+   background-color: #101010;
+   transition: background-color 0.25s linear;
+   &:hover {
+    background-color: #454545;
+   }
+  }
+  i {
+   width: 20%;
+   text-align: center;
+   font-size: 28px;
+   margin-right: 7px;
+  }
+  .big-txt {
+   font-size: 17px;
+   text-transform: capitalize;
+  }
+ }
+}
+.About BG {
+      background-color: #8aa165;
+      height: 100%;
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+    }
 </style>
 </head>
 <body>
 <br>
 <img src="https://i.ibb.co/XDQJqQT/new-sprites-excited.png" alt="Introduction Dragon" style="width:200px">
-<h1>WELCOME TO EDWORD!</h1>
-<p><i>Real People making Real Games.</i></p>
+<h1>WELCOME TO DRAGON'S WORD!</h1>
+<p><i>Edword the Dragon is cute, cuddly, and in big trouble! Can you help him turn a jumble of magical letters into a chain of powerful words?</i></p>
 <hr style="width:600px">
 <br>
-<h1>Introduction</h1>
-<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-<br>
-<hr style="width:600px">
-<br>
-<h1>Dragon's Word</h1>
-<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint </p>
+<div class="flex social-btns">
+  <a class="app-btn blu flex vert" href="http:apple.com">
+    <i class="fab fa-apple"></i>
+    <p>Available on the <br/> <span class="big-txt">App Store</span></p>
+  </a>
+  <a class="app-btn blu flex vert" href="http:google.com">
+    <i class="fab fa-google-play"></i>
+    <p>Get it on <br/> <span class="big-txt">Google Play</span></p>
+  </a>
+</div>
+<section class="AboutBG">
+<h1>About Dragon's Word</h1>
 <br>
 <img src="https://i.ibb.co/CsnTvL0/MENU-DRAFT-no-tile-ex.png" alt="Screenshot Dragon's Word" style="width:200px">
 <img src="https://i.ibb.co/5WVkgTg/selection-screen-new-icons.png" alt="Screenshot Dragon's Word" style="width:200px">
 <img src="https://i.ibb.co/CsnTvL0/MENU-DRAFT-no-tile-ex.png" alt="Screenshot Dragon's Word" style="width:200px">
 <br>
-<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint </p>
+<p></p>
+<p>
+Guide your pet dragon on a word-find quest the likes of which you've never experienced before, and test your vocabulary, strategy, and pattern-finding skills along the way. Spot words, chain words, overlap words, and reuse your most valuable letters to boost your score into the stratosphere. 
+</p>
+<p>
+Dragon's Word features a huge dictionary of words and definitions, adorable art by Minju Chun, a mellow soundtrack, and hours of puzzling pleasure. Sharpen your vocabulary and your mind, all while playing with a cute baby dragon. 
+</p>
+<p>
+You'll have fun; Dragon's Word!
+</p>
 <br>
- <button type="button">DOWNLOAD ON GOOGLE APP</button> 
- <button type="button">DOWNLOAD ON APP STORE</button> 
+</section
 <br>
 <hr style="width:600px">
 <br>
 <img src="https://i.ibb.co/Tk5kkWZ/new-sprites-neutral2.png" alt="new-sprites-neutral2" alt="Introduction Dragon" style="width:200px">
-<p>Smell ya later! </p>
+<div class="flex social-btns">
+  <a class="app-btn blu flex vert" href="http:apple.com">
+    <i class="fab fa-apple"></i>
+    <p>HOME</p>
+  </a>
+  <a class="app-btn blu flex vert" href="http:google.com">
+    <i class="fab fa-google-play"></i>
+    <p>PRIVATE POLICY</p>
+  </a>
+</div>
 <br>
 </body>
 </html>
