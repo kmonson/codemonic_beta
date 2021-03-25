@@ -59,10 +59,18 @@ img.rounded-corners {
  }
 }
 
-.et_pb_button {
-    display: inline-block;
-    margin: 5px; /* space between buttons */
+.btn {
+  border: none;
+  background-color: inherit;
+  padding: 14px 28px;
+  font-size: 16px;
+  cursor: pointer;
+  display: inline-block;
 }
+
+.btn:hover {background: #eee;}
+
+.success {color: #569a5a;}
 
 </style>
 </head>
@@ -105,8 +113,7 @@ You'll have fun; Dragon's Word!
 <br>
 <hr style="width:600px">
 <br>
-<img src="https://i.ibb.co/Tk5kkWZ/new-sprites-neutral2.png" alt="new-sprites-neutral2" alt="Introduction Dragon" style="width:200px">
-<a class="et_pb_button" title="Private Policy Button" href="#">Click Here for Private Policy</a>
+<button class="btn success" title="Private Policy Button">Click Here for Private Policy</button>
 <br>
 </body>
 </html>
