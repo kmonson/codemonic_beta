@@ -6,19 +6,185 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="mystyle.css">
 <style type="text/css">
+
+ /* Body */
 body {
+  width: 100%;
   background-color: #fff;
+  clear: both;
   text-align: center;
-  color: #490000;
-  position: fixed;
+  color: #fff;
   font-family:  "Helvetica","Trebuchet MS","Verdana", "Tahoma";
 }
 
-body.bodystyle {
-  width: 70%;
-  margin: 0 auto;
+p {
+text-align: center;
+font-size: 18px;
+padding-right:20%;
+padding-left: 20%;
 }
 
+body.bodystyle {
+  text-align: center;
+  width: 100%;
+  margin: 0 auto;
+}
+/* App and Play Store Buttons */
+/*
+#applestorebutton{
+    width: 300px;
+    background-image: url('https://github.com/MILLEMHBKR/MILLEMHBKR.github.io/blob/master/google-play-badge2.png?raw=true');
+    background-size: cover;
+   background-color: #eee;
+}
+#playstorebutton{
+    width: 300px;
+    background-image: url('https://github.com/MILLEMHBKR/MILLEMHBKR.github.io/blob/master/google-play-badge.png?raw=true');
+    background-size: cover;
+   background-color: #eee;
+}
+*/
+.storebuttonimg{
+    width: 300px;
+}
+
+.storebuttonscontainer{
+    text-align: center;
+}
+
+/* Side by Side Images */
+* {
+  box-sizing: border-box;
+}
+
+.column {
+  float: left;
+  max-width: 25%;
+  padding: 40px;
+}
+
+/* Clearfix (clear floats) */
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+ /* Wave Code */
+#wave {
+  position: relative;
+  height: 70px;
+  width: 600px;
+  background: #e0efe3;
+}
+#wave:before {
+  content: "";
+  display: block;
+  position: absolute;
+  border-radius: 100% 50%;
+  width: 340px;
+  height: 80px;
+  background-color: white;
+  right: -5px;
+  top: 40px;
+}
+#wave:after {
+  content: "";
+  display: block;
+  position: absolute;
+  border-radius: 100% 50%;
+  width: 300px;
+  height: 70px;
+  background-color: #e0efe3;
+  left: 0;
+  top: 27px;
+}
+
+ /* BG Section Colors */
+ #headersectionbg {
+   background-color: #9addcd;
+   padding-top: 50px;
+   padding-bottom: 50px;
+   min-height: 100px;
+   width: 100%;
+}
+
+#AppStoresectionbg {
+   background-color: #6f8f57;
+   padding-top: 50px;
+   padding-bottom: 50px;
+   min-height: 100px;
+   width: 100%;
+}
+
+#AboutContentsectionbg {
+   background-color: #5eab62;
+   padding-top: 50px;
+   padding-bottom: 50px;
+   min-height: 100px;
+   width: 100%;
+}
+
+#Footersectionbg {
+   background-color: #bcd87b;
+   padding-top: 50px;
+   padding-bottom: 50px;
+   min-height: 100px;
+   width: 100%;
+}
+/* Button Hover */
+.buttonmodule {
+  border-radius: 0px;
+  background-color: #fff;
+  height: 100px;
+  width: 300px;
+  border: none;
+  padding: 0px;
+  margin: 0px;
+}
+
+.buttonwhite {
+  border-radius: 0px;
+  background-color: #fff;
+  border-radius: 15px;
+  border: none;
+  color: #282828;
+  text-align: center;
+  font-size: 18px;
+  padding: 20px;
+  height: 70px;
+  width: 300px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 0px;
+  float: center;
+}
+.buttonwhite span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.buttonwhite span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.buttonwhite:hover span {
+  padding-right: 25px;
+}
+
+.buttonwhite:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
+ /* MISC Code */
 .flex {
  display: flex;
  align-items: center;
@@ -34,38 +200,6 @@ img.rounded-corners {
   border-radius: 30px;
 }
 
-.app {
- &-btn {
-  width: 45%;
-  max-width: 160px;
-  color: #fff;
-  margin: 20px 10px;
-  text-align: left;
-  border-radius: 5px;
-  text-decoration: none;
-  font-family: "Lucida Grande", sans-serif;
-  font-size: 10px;
-  text-transform: uppercase;
-  &.blu {
-   background-color: #101010;
-   transition: background-color 0.25s linear;
-   &:hover {
-    background-color: #454545;
-   }
-  }
-  i {
-   width: 20%;
-   text-align: center;
-   font-size: 28px;
-   margin-right: 7px;
-  }
-  .big-txt {
-   font-size: 17px;
-   text-transform: capitalize;
-  }
- }
-}
-
 .btn {
   border: none;
   background-color: inherit;
@@ -79,33 +213,70 @@ img.rounded-corners {
 
 .PP {color: #569a5a;}
 
-</style>
+</style>]
+  <!--[if !mso]><!-->
+    <style type="text/css">
+      @media only screen and (max-width:480px) {
+        @-ms-viewport {
+          width: 320px;
+        }
+        @viewport {
+          width: 320px;
+        }
+      }
+  /* Side by Side Images */
+  * {
+     box-sizing: border-box;
+  }
+
+  .column {
+    float: left;
+    max-width: 25%;
+    padding: 20px;
+  }
+
+  /* Clearfix (clear floats) */
+  .row::after {
+    content: "";
+    clear: both;
+    display: table;
+  }  
+    </style>
 </head>
 <body class="bodystyle">
-<br>
+  <div id="headersectionbg">
 <img src="https://github.com/kmonson/codemonic_beta/blob/master/docs/App_Icon_Top.png?raw=true" class="rounded-corners" alt="App Icon" style="width:200px">
 <h1 class="titlefont">WELCOME TO DRAGON'S WORD!</h1>
-<p><i>Edword the Dragon is cute, cuddly, and in big trouble! Can you help him turn a jumble of magical letters into a chain of powerful words?</i></p>
-<hr style="width:600px">
-<br>
-<div class="flex social-btns">
-  <a class="app-btn blu flex vert" href="http:apple.com">
-    <i class="fab fa-apple"></i>
-    <p>Available on the <br/> <span class="big-txt">App Store</span></p>
-  </a>
-  <a class="app-btn blu flex vert" href="http:google.com">
-    <i class="fab fa-google-play"></i>
-    <p>Get it on <br/> <span class="big-txt">Google Play</span></p>
-  </a>
+<p style="font-size:18px"><i>Edword the Dragon is cute, cuddly, and in big trouble! Can you help him turn a jumble of magical letters into a chain of powerful words?</i></p>
+</div>
+<div class="storebuttonscontainer">
+  <div id="AppStoresectionbg">
+    <div class="storebuttonscontainer">
+    <a href="https://www.google.com/">
+      <img class="storebuttonimg" alt="Apple Store Link" src="https://github.com/kmonson/codemonic_beta/blob/master/docs/google-play-badge2.png?raw=true"></a>
+    <a href="https://www.google.com/">
+      <img class="storebuttonimg" alt="Apple Store Link" src="https://github.com/kmonson/codemonic_beta/blob/master/docs/appstore_badge_2.png?raw=true"></a>  
+  </div>
+</div>
 </div>
 <section class="AboutBG">
+  <div id="AboutContentsectionbg">
 <h1 class="titlefont">About Dragon's Word</h1>
-<br>
-<img src="https://i.ibb.co/CsnTvL0/MENU-DRAFT-no-tile-ex.png" alt="Screenshot Dragon's Word" style="width:200px">
-<img src="https://i.ibb.co/5WVkgTg/selection-screen-new-icons.png" alt="Screenshot Dragon's Word" style="width:200px">
-<img src="https://i.ibb.co/CsnTvL0/MENU-DRAFT-no-tile-ex.png" alt="Screenshot Dragon's Word" style="width:200px">
-<br>
-<p></p>
+<div class="row">
+  <div class="column">
+    <img src="https://github.com/kmonson/codemonic_beta/blob/master/docs/Ipad_3LVLS.png?raw=true" alt="Snow" style="width:100%">
+  </div>
+  <div class="column">
+    <img src="https://github.com/kmonson/codemonic_beta/blob/master/docs/Ipad_Diff_Settings.png?raw=true" alt="Forest" style="width:100%">
+  </div>
+  <div class="column">
+    <img src="https://github.com/kmonson/codemonic_beta/blob/master/docs/Ipad_Strategic_Scoring.png?raw=true" alt="Mountains" style="width:100%">
+  </div>
+  <div class="column">
+    <img src="https://github.com/kmonson/codemonic_beta/blob/master/docs/Title_screen_shot.png?raw=true" alt="Mountains" style="width:100%">
+  </div>
+</div>
+<br><br>
 <p>
 Guide your pet dragon on a word-find quest the likes of which you've never experienced before, and test your vocabulary, strategy, and pattern-finding skills along the way. Spot words, chain words, overlap words, and reuse your most valuable letters to boost your score into the stratosphere. 
 </p>
@@ -115,12 +286,10 @@ Dragon's Word features a huge dictionary of words and definitions, adorable art 
 <p>
 You'll have fun; Dragon's Word!
 </p>
-<br>
-</section
-<br>
-<hr style="width:600px">
-<br>
-<button class="btn PP" title="Private Policy Button" onclick=" window.open('https://kmonson.github.io/codemonic_beta/privatepolicy.html','_blank')">Click Here for Private Policy</button>
-<br>
+</div>
+</section>
+<div id="Footersectionbg">
+<button class="buttonwhite" title="Private Policy Button" onclick=" window.open('https://kmonson.github.io/codemonic_beta/privatepolicy.html','_blank')" style="color:#6f8f57;"><span>CLICK HERE FOR PRIVATE POLICY</span></button>
+</div>
 </body>
 </html>
