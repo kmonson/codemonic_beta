@@ -10,6 +10,7 @@
  /* Body */
 body {
   width: 100%;
+  position: relative;
   background-color: #fff;
   clear: both;
   text-align: center;
@@ -107,6 +108,7 @@ body.bodystyle {
    padding-bottom: 50px;
    min-height: 100px;
    width: 100%;
+   position: relative;
 }
 
 #AppStoresectionbg {
@@ -132,6 +134,14 @@ body.bodystyle {
    min-height: 100px;
    width: 100%;
 }
+/* Div Wrapper to make Grass Dividers */
+.inner-content img {
+    max-width: 100%;
+    position: absolute;
+    overflow: hidden;
+    height: auto;
+    bottom: 0; /* adjust to suit requirements */
+}
 /* Button Hover */
 .buttonmodule {
   border-radius: 0px;
@@ -148,7 +158,7 @@ body.bodystyle {
   background-color: #fff;
   border-radius: 15px;
   border: none;
-  color: #282828;
+  color: #430b0b;
   text-align: center;
   font-size: 18px;
   padding: 20px;
@@ -191,13 +201,23 @@ body.bodystyle {
  justify-content: center;
 }
 
+.titlefontheader {
+  font-family:  "Helvetica","Trebuchet MS";
+  text-align: center;
+  color: #430b0b;
+}
+
 .titlefont {
   font-family:  "Helvetica","Trebuchet MS";
   text-align: center;
+  color: #fff;
 }
 
 img.rounded-corners {
   border-radius: 30px;
+  background-color: #fff;
+  padding: 8px;
+}
 }
 
 .btn {
@@ -244,18 +264,19 @@ img.rounded-corners {
     </style>
 </head>
 <body class="bodystyle">
-  <div id="headersectionbg">
+  <div id="headersectionbg" class="div-wrapper">
 <img src="https://github.com/kmonson/codemonic_beta/blob/master/docs/App_Icon_Top.png?raw=true" class="rounded-corners" alt="App Icon" style="width:200px">
-<h1 class="titlefont">WELCOME TO DRAGON'S WORD!</h1>
-<p style="font-size:18px"><i>Edword the Dragon is cute, cuddly, and in big trouble! Can you help him turn a jumble of magical letters into a chain of powerful words?</i></p>
+<h1 class="titlefontheader">WELCOME TO DRAGON'S WORD!</h1>
+<p style="font-size:18px;color:#430b0b;"><i>Edword the Dragon is cute, cuddly, and in big trouble! Can you help him turn a jumble of magical letters into a chain of powerful words?</i></p>
+<img src="https://github.com/MILLEMHBKR/MILLEMHBKR.github.io/blob/master/Grass_Images_DIV.png?raw=true" class="inner-content"/>
 </div>
 <div class="storebuttonscontainer">
   <div id="AppStoresectionbg">
     <div class="storebuttonscontainer">
     <a href="https://www.google.com/">
-      <img class="storebuttonimg" alt="Apple Store Link" src="https://github.com/kmonson/codemonic_beta/blob/master/docs/google-play-badge2.png?raw=true"></a>
+      <img class="storebuttonimg" alt="Apple Store Link" src="https://github.com/MILLEMHBKR/MILLEMHBKR.github.io/blob/master/google-play-badge2.png?raw=true"></a>
     <a href="https://www.google.com/">
-      <img class="storebuttonimg" alt="Apple Store Link" src="https://github.com/kmonson/codemonic_beta/blob/master/docs/appstore_badge_2.png?raw=true"></a>  
+      <img class="storebuttonimg" alt="Apple Store Link" src="https://github.com/MILLEMHBKR/MILLEMHBKR.github.io/blob/master/appstore_badge_2.png?raw=true"></a>  
   </div>
 </div>
 </div>
@@ -264,16 +285,16 @@ img.rounded-corners {
 <h1 class="titlefont">About Dragon's Word</h1>
 <div class="row">
   <div class="column">
-    <img src="https://github.com/kmonson/codemonic_beta/blob/master/docs/Ipad_3LVLS.png?raw=true" alt="Snow" style="width:100%">
+    <img src="https://github.com/MILLEMHBKR/MILLEMHBKR.github.io/blob/master/Ipad_3LVLS.png?raw=true" alt="Snow" style="width:100%" class="rounded-corners">
   </div>
   <div class="column">
-    <img src="https://github.com/kmonson/codemonic_beta/blob/master/docs/Ipad_Diff_Settings.png?raw=true" alt="Forest" style="width:100%">
+    <img src="https://github.com/MILLEMHBKR/MILLEMHBKR.github.io/blob/master/Ipad_Diff_Settings.png?raw=true" alt="Forest" style="width:100%" class="rounded-corners">
   </div>
   <div class="column">
-    <img src="https://github.com/kmonson/codemonic_beta/blob/master/docs/Ipad_Strategic_Scoring.png?raw=true" alt="Mountains" style="width:100%">
+    <img src="https://github.com/MILLEMHBKR/MILLEMHBKR.github.io/blob/master/Ipad_Strategic_Scoring.png?raw=true" alt="Mountains" style="width:100%" class="rounded-corners">
   </div>
   <div class="column">
-    <img src="https://github.com/kmonson/codemonic_beta/blob/master/docs/Title_screen_shot.png?raw=true" alt="Mountains" style="width:100%">
+    <img src="https://github.com/MILLEMHBKR/MILLEMHBKR.github.io/blob/master/Title_screen_shot.png?raw=true" alt="Mountains" style="width:100%" class="rounded-corners">
   </div>
 </div>
 <br><br>
@@ -289,7 +310,7 @@ You'll have fun; Dragon's Word!
 </div>
 </section>
 <div id="Footersectionbg">
-<button class="buttonwhite" title="Private Policy Button" onclick=" window.open('https://kmonson.github.io/codemonic_beta/privatepolicy.html','_blank')" style="color:#6f8f57;"><span>CLICK HERE FOR PRIVATE POLICY</span></button>
+<button class="buttonwhite" title="Private Policy Button" onclick=" window.open('https://kmonson.github.io/codemonic_beta/privatepolicy.html','_blank')" style="color:#6f8f57;"><span>CLICK HERE FOR PRIVACY POLICY</span></button>
 </div>
 </body>
 </html>
