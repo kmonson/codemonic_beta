@@ -104,11 +104,14 @@ body.bodystyle {
  /* BG Section Colors */
  #headersectionbg {
    background-color: #9addcd;
+   overflow: hidden;
    padding-top: 50px;
+   position: absolute;
    padding-bottom: 50px;
    min-height: 100px;
    width: 100%;
    position: relative;
+   /*position: relative;*/
 }
 
 #AppStoresectionbg {
@@ -134,13 +137,21 @@ body.bodystyle {
    min-height: 100px;
    width: 100%;
 }
-/* Div Wrapper to make Grass Dividers */
-.inner-content img {
-    max-width: 100%;
+/* Div Wrapper to make Grass Dividers and Float at Bottom */
+#grassimgtrial {
     position: absolute;
+    left: 0;
+    bottom: 0;
     overflow: hidden;
-    height: auto;
-    bottom: 0; /* adjust to suit requirements */
+    max-width: 100%
+}
+#grassimgtrialfooter {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    overflow: hidden;
+    max-width: 100%
+}
 }
 /* Button Hover */
 .buttonmodule {
@@ -268,7 +279,7 @@ img.rounded-corners {
 <img src="https://github.com/kmonson/codemonic_beta/blob/master/docs/App_Icon_Top.png?raw=true" class="rounded-corners" alt="App Icon" style="width:200px">
 <h1 class="titlefontheader">WELCOME TO DRAGON'S WORD!</h1>
 <p style="font-size:18px;color:#430b0b;"><i>Edword the Dragon is cute, cuddly, and in big trouble! Can you help him turn a jumble of magical letters into a chain of powerful words?</i></p>
-<img src="https://github.com/MILLEMHBKR/MILLEMHBKR.github.io/blob/master/Grass_Images_DIV.png?raw=true" class="inner-content"/>
+<img src="https://github.com/MILLEMHBKR/MILLEMHBKR.github.io/blob/master/Grass_Images_Extra_DIV.png?raw=true" id="grassimgtrial"/>
 </div>
 <div class="storebuttonscontainer">
   <div id="AppStoresectionbg">
@@ -282,6 +293,7 @@ img.rounded-corners {
 </div>
 <section class="AboutBG">
   <div id="AboutContentsectionbg">
+  <img src="https://github.com/MILLEMHBKR/MILLEMHBKR.github.io/blob/master/Grass_Images_Extra_Footer_DIV.png?raw=true" id="grassimgtrialfooter"/>
 <h1 class="titlefont">About Dragon's Word</h1>
 <div class="row">
   <div class="column">
